@@ -127,6 +127,7 @@ class MDnsClient {
           ttl: 255,
         );
       } catch (e) {
+        /** NF note June 18 2021 -- this trycatch allows this librry to be used on Windows, where binding to the many virtual NICs would otherwise cause fatal crashes */
         continue;
       }
       _sockets.add(socket);
