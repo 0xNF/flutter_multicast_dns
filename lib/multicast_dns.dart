@@ -148,8 +148,8 @@ class MDnsClient {
       /* NF NOTE June 18 2021 -- iOS 14+ broke this package. Setting the value to an ipv4 in byte format fixes it for iPhones and iPads */
       // Join multicast on this interface.
       // _incoming.joinMulticast(_mDnsAddress, interface);
-      final value = Uint8List.fromList(_mDnsAddress.rawAddress + interface.addresses[0].rawAddress);
-      _incoming.setRawOption(RawSocketOption(RawSocketOption.levelIPv4, 12, value));
+      final value = Uint8List.fromList(_mDnsAddress!.rawAddress + interface.addresses[0].rawAddress);
+      incoming.setRawOption(RawSocketOption(RawSocketOption.levelIPv4, 12, value));
     }
     incoming.listen((RawSocketEvent event) => _handleIncoming(event, incoming));
     _started = true;
