@@ -4,6 +4,7 @@
 
 import 'dart:async';
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:multicast_dns/src/constants.dart';
 import 'package:multicast_dns/src/lookup_resolver.dart';
