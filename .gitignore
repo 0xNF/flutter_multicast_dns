@@ -1,0 +1,30 @@
+.DS_Store
+.atom/
+.idea
+.packages
+.pub/
+.dart_tool/
+
+pubspec.lock
+
+Podfile.lock
+Pods/
+
+*instrumentscli*.trace
+*.cipd
+
+# Build directories are produced when building using the Flutter CLI.
+build
+
+# This file is produced as a back-up when web_benchmarks fails to parse a
+# Chrome trace.
+chrome-trace.json
+
+# Generated files on example apps
+flutter_export_environment.sh
+.flutter-plugins*
+local.properties
+**/Flutter/Generated.xcconfig
+
+generated_plugin_registrant.*
+GeneratedPluginRegistrant.*

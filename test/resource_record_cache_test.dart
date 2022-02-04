@@ -1,6 +1,6 @@
-// Copyright (c) 2015, the Dartino project authors. Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
+// Copyright 2013 The Flutter Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
 
 // Test that the resource record cache works correctly.  In particular, make
 // sure that it removes all entries for a name before insertingrecords
@@ -8,10 +8,10 @@
 
 import 'dart:io';
 
-import 'package:test/test.dart';
-import 'package:multicast_dns/src/resource_record.dart';
 import 'package:multicast_dns/src/native_protocol_client.dart'
     show ResourceRecordCache;
+import 'package:multicast_dns/src/resource_record.dart';
+import 'package:test/test.dart';
 
 void main() {
   testOverwrite();
